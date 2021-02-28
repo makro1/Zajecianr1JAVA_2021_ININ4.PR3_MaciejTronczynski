@@ -1,5 +1,7 @@
 package pl.gda.wsb;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -24,6 +26,25 @@ public class Main {
         }else {
             System.out.println(human1.name + " jest wyższy/a od " + human2.name);
         }
+
+        // StringBuilder humanWithMaxHeightDescription = new StringBuilder()
+          //      .append("The tallest person: ")
+            //    .append(humanWithMaxHeight.name)
+
+
+        System.out.println();
+        ArrayList<Human> humansList = new ArrayList();
+        humansList.add(human1);
+        humansList.add(human2);
+        humansList.add(human3);
+
+        for (Human human : humansList) {
+            System.out.println(human.name + " " + human.age + " " + human.height);
+
+        }
+
+
+
 
 
 
