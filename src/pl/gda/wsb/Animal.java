@@ -52,4 +52,16 @@ public class Animal {
         } else
             System.out.println("-1kg");
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", height=" + height +
+                ", haveTail=" + haveTail +
+                ", species='" + species + '\'' +
+                ", weight=" + weight +
+                '}';
+    }
 }

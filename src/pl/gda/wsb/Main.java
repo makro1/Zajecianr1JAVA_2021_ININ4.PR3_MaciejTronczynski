@@ -18,6 +18,7 @@ public class Main {
         Human human1 = new Human("Edek", 50, 180);
         Human human2 = new Human("Mariola", 50, 155);
         Human human3 = new Human("Julek", 50, 170);
+        Human human4 = new Human("Julek", 50, 170);
 
        /* if (animal1.height > animal2.height) {
             System.out.println(animal1.name + " jest wyższy od " + animal2.name);
@@ -57,8 +58,20 @@ public class Main {
         System.out.println();
         System.out.println();
 
-        Car car1 = new Car("Octavia", "Skoda", 200, 2.0);
+        Car car1 = new Car("Octavia", CarProducer.KIA, 200, 2.0);
         human1.car = car1;
+
+        System.out.println("------------");
+
+        if(human3.equals(human4)) System.out.println("Wynik porównania: TRUE");
+        else System.out.println("Wynik porównania: FALSE\n");
+
+        System.out.println(car1);
+        System.out.println(human2);
+
+
+
+
 
 
 
