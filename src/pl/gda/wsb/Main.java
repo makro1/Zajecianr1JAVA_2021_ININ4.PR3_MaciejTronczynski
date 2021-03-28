@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
 
         Animal animal1 = new Animal("Pies", 2, 50, true, "Pies", 30);
@@ -68,6 +68,9 @@ public class Main {
 
         System.out.println(car1);
         System.out.println(human2);
+
+        human1.getSalary();
+        human2.setSalary(5000.0);
 
 
 

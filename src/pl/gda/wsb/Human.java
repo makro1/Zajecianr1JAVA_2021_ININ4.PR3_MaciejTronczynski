@@ -1,5 +1,7 @@
 package pl.gda.wsb;
 
+import java.util.Date;
+
 import pl.gda.wsb.devices.Car;
 
 import java.util.Objects;
@@ -8,9 +10,27 @@ public class Human {
     public String name;
     public int age;
     public int height;
+    private Double salary;
     Animal pet;
     Car car;
 
+    public Double getSalary() {
+        Date nowDate = new Date();
+        System.out.println("Wypłata była pobrana: " + nowDate);
+        return salary;
+    }
+
+    public void setSalary(Double salary) {
+        if(salary <= 0 ){
+            System.out.println("Wypłata nie może być ujemna!");
+        }else
+            System.out.println("Nowe dane zostały wysłane do systemu księgowego.");
+            System.out.println("Odbierz aneks od pani Hani :)");
+            System.out.println("ZUS już wie!");
+            System.out.println("Twoja nowa wypłata wynosi: " + salary);
+
+            this.salary = salary;
+    }
 
     public Human(String name, int age, int height) {
         this.name = name;
