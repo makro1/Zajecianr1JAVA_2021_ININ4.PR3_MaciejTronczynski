@@ -53,6 +53,16 @@ public class Main {
         System.out.println(animal3.weight);
         animal3.takeForAWalk();
         animal3.takeForAWalk();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+
+        Car car1 = new Car("Octavia", "Skoda", 200, 2.0);
+
+
+
+
+
 
 
 

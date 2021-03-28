@@ -25,30 +25,31 @@ public class Animal {
         this.species = species;
         this.weight = weight;
 
-        if(species.equals("Mysz")){
+        if (species.equals("Mysz")) {
             this.weight = DEAFAULT_MOUSE_WEIGHT;
-        } else if(species.equals("Pies")){
+        } else if (species.equals("Pies")) {
             this.weight = DEAFAULT_DOG_WEIGHT;
-        }else if(species.equals("Kot")){
+        } else if (species.equals("Kot")) {
             this.weight = DEAFAULT_CAT_WEIGHT;
-        }else
+        } else
             this.weight = weight;
 
     }
 
-    void feed(){
-        if(weight <= 0){
+    void feed() {
+        if (weight <= 0) {
             System.out.println("Zwierzę zdechło");
-        }else {
+        } else {
             weight++;
             System.out.println("+1kg");
         }
     }
-    void takeForAWalk(){
+
+    void takeForAWalk() {
         weight--;
-        if(weight <= 0){
+        if (weight <= 0) {
             System.out.println("Zwierzę zdechło");
-        }else
-        System.out.println("-1kg");
+        } else
+            System.out.println("-1kg");
     }
 }
