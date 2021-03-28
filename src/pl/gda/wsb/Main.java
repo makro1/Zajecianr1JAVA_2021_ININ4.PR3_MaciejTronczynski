@@ -1,8 +1,8 @@
 package pl.gda.wsb;
 
-import java.io.FileWriter;
+import pl.gda.wsb.devices.Car;
+
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class Main {
 

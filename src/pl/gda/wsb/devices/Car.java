@@ -1,4 +1,6 @@
-package pl.gda.wsb;
+package pl.gda.wsb.devices;
+
+import pl.gda.wsb.CarProducer;
 
 public class Car {
     final String model;
@@ -6,7 +8,7 @@ public class Car {
     int vMax;
     double engineCapacity;
 
-    public Car(String model, CarProducer producer, int vMax, double engineCapacity) {
+    public Car(String model, pl.gda.wsb.CarProducer producer, int vMax, double engineCapacity) {
         this.model = model;
         this.CarProducer = producer;
         this.vMax = vMax;
