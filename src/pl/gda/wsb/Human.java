@@ -12,7 +12,24 @@ public class Human {
     public int height;
     private Double salary;
     Animal pet;
-    Car car;
+    private Car car;
+
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        if(this.salary > car.getValue()){
+            System.out.println("Udało się kupić samochód za gotówkę!" + car.toString());
+            this.car = car;
+        }else if(this.salary > (car.getValue()/12)){
+            System.out.println("Samochód został zakupiony na kredyt");
+            this.car = car;
+        }else
+            System.out.println("Nie stać Cię!");
+
+        this.car = car;
+    }
 
     public Double getSalary() {
         Date nowDate = new Date();
@@ -21,15 +38,16 @@ public class Human {
     }
 
     public void setSalary(Double salary) {
-        if(salary <= 0 ){
+        if(salary <= 0.0 ){
             System.out.println("Wypłata nie może być ujemna!");
-        }else
+        }else {
             System.out.println("Nowe dane zostały wysłane do systemu księgowego.");
             System.out.println("Odbierz aneks od pani Hani :)");
             System.out.println("ZUS już wie!");
             System.out.println("Twoja nowa wypłata wynosi: " + salary);
 
             this.salary = salary;
+        }
     }
 
     public Human(String name, int age, int height) {

@@ -58,8 +58,8 @@ public class Main {
         System.out.println();
         System.out.println();
 
-        Car car1 = new Car("Octavia", CarProducer.KIA, 200, 2.0);
-        human1.car = car1;
+        Car car1 = new Car("Octavia", CarProducer.KIA, 200, 2.0, 50000);
+       // human1.car = car1;
 
         System.out.println("------------");
 
@@ -71,6 +71,7 @@ public class Main {
 
         human1.getSalary();
         human2.setSalary(5000.0);
+        human3.setSalary(0.0);
 
 
 
