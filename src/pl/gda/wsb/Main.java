@@ -58,6 +58,7 @@ public class Main {
         System.out.println();
 
         Car car1 = new Car("Octavia", "Skoda", 200, 2.0);
+        human1.car = car1;
 
 
 
